@@ -142,21 +142,31 @@ The flow is designed from **foundations → data handling → modeling → intel
 
 ---
 
-## 🔄 Overall Skill Flow
+## 🔁 Skill Workflow Flowchart
 
-```text
-Mathematics
-   ↓
-Python
-   ↓
-NumPy → Pandas
-   ↓
-Data Visualization
-   ↓
-Data Mining
-   ↓
-Machine Learning
-   ↓
-Artificial Intelligence
-   ↓
-Agentic AI
+```mermaid
+flowchart TD
+
+A[Mathematics] --> B[Python Programming]
+
+B --> C[NumPy]
+C --> D[Pandas]
+
+D --> E[Data Visualization]
+E --> E1[Matplotlib]
+E --> E2[Seaborn]
+E --> E3[Power BI + Excel]
+
+D --> F[Data Mining]
+F --> F1[WEKA Tool]
+
+F --> G[Machine Learning]
+G --> G1[scikit-learn]
+
+G --> H[Artificial Intelligence]
+
+H --> I[Agentic AI]
+
+B --> J[SQL]
+J --> D
+
